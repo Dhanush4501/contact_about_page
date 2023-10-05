@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal -->
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>Responsive Navbar with Search Box | CodingNepal</title>
+      <link rel="stylesheet" href="C:\html\contact and about page\contact-page.css">
+      <script src="https://kit.fontawesome.com/c32adfdcda.js" crossorigin="anonymous"></script>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+      <link rel="shortcut icon" href="image/logo.jpg" type="image/x-icon">
+   </head>
+   <body>
+    <header id = "contact_us_header">
+      <nav>
+         <div class="menu-icon">
+            <span class="fas fa-bars"></span>
+         </div>
+         <div class="logo">
+            GeSeven
+         </div>
+         <div class="nav-items">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Product</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">Feedback</a></li>
+         </div>
+         <div class="search-icon">
+            <span class="fas fa-search"></span>
+         </div>
+         <div class="cancel-icon">
+            <span class="fas fa-times"></span>
+         </div>
+         <ion-icon name="cart" ></ion-icon>
+         <form action="#">
+            <input type="search" class="search-data" placeholder="Search" required>
+            <button type="submit" class="fas fa-search"></button>
+         </form>
+
+        
+      </nav>
+    </header>
+    <section id="section1">
+        <h1 id="contactus">Contact Us</h1>
+        <p id="contactus_detail ">
+            GeSeven Medica, a leading pharmaceutical company located in Petaling Jaya, Selangor, was established in November 2007. The company's primary business is trading in medicines, medical devices, and medical equipment for clinics and hospitals. GeSeven Medica has been a well-known enterprise since its inception and has been serving private clinics and hospitals in the Klang Valley. It was founded by Mr. Nadarajan Govindasamy, the sole proprietor in Damansara Utama, Petaling Jaya, who successfully developed the business to serve approximately 500 customers as of 2013. He continues to apply his 20 years of experience in the medical field to further expand his business.
+        </p>
+    </section>
+    <section id="section2">
+        <div id="contact_detail">
+            <ol>
+                <li id="address" class="detail">
+                    <h2>Address</h2>
+                    <pre>
+                    GeSeven Medica
+                    (M) Sdn Bhd
+                    Suite 5.1A,th Floor,
+                    Bangunan THK,
+                    No.2A, Jalan 51A/243,
+                    Seksyen 51A,
+                    46100 Petaling Jaya,
+                    Selangor 55060
+                    </pre>
+                </li>
+                
+                <li id="phone" class="detail">
+                    <h2>Phone number</h2>
+                    <pre>
+                    +603 7865 7788
+                    +6012 404 5336
+                    </pre>
+                </li>
+                <li id="email" class="detail">
+                    <h2>Email</h2>
+                    <pre>
+                        g7medica@gmail.com
+                    </pre>
+                </li>
+            </ol>
+        </div>
+        <div class="contact-form">
+            <form action="" id="contact-form">
+              <h2>Send Message</h2>
+              <div class="input-box">
+                <input type="text" placeholder="Name">
+                
+              </div>
+              
+              <div class="input-box">
+                <input type="Email" placeholder="Email">
+                </div>
+              
+              <div class="input-box">
+                <textarea placeholder=" Message"></textarea>
+  
+              </div>
+              
+              <div class="input-box">
+                <input type="submit" value="Send" name="">
+              </div>
+            </form>
+          </div>
+    </section>
+
+
+
+      <script>
+         const menuBtn = document.querySelector(".menu-icon span");
+         const searchBtn = document.querySelector(".search-icon");
+         const cancelBtn = document.querySelector(".cancel-icon");
+         const items = document.querySelector(".nav-items");
+         const form = document.querySelector("form");
+         menuBtn.onclick = ()=>{
+           items.classList.add("active");
+           menuBtn.classList.add("hide");
+           searchBtn.classList.add("hide");
+           cancelBtn.classList.add("show");
+         }
+         cancelBtn.onclick = ()=>{
+           items.classList.remove("active");
+           menuBtn.classList.remove("hide");
+           searchBtn.classList.remove("hide");
+           cancelBtn.classList.remove("show");
+           form.classList.remove("active");
+           cancelBtn.style.color = "white";
+         }
+         searchBtn.onclick = ()=>{
+           form.classList.add("active");
+           searchBtn.classList.add("hide");
+           cancelBtn.classList.add("show");
+         }
+      </script>
+
+    <section class="hero" id="about-section">
+        <div class="heading">
+            <h1><strong>About us</strong></h1>
+            <hr>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <h2><u>Who We Are</u></h2>
+                <p>GeSeven Medica, is a leading pharmaceutical company located in Petaling Jaya, Selangor. It was established in November 2007. The company’s principal business nature is to trade in medicines, medical devices, and medical equipment for clinics and hospitals.</p>
+                <p>GeSeven Medica has been a well-known enterprise since its establishment and has been servicing private clinics and private hospitals in the Klang Valley. It was established by Mr. Nadarajan Govindasamy, sole proprietor in Damansara Utama, Petaling Jaya who has successfully developed the business to approximately 500 customers as of 2013. He continues to apply his 20 years of experience in the medical fields to expand his business.</p>
+                <button class="cta-button">Learn more</button>
+            </div>
+            <div class="hero-image">
+                <img src="C:\html\about page\about page\img.jpg">
+            </div>
+        </div>
+    </section>
+</body>
+
+
